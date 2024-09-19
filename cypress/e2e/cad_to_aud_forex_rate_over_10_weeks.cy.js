@@ -1,4 +1,4 @@
-describe("Fetch Forex Rate and Calculate Average", () => {
+describe("Fetch Forex Rate for CAD to AUD and Calculate Average for 10 Weeks", () => {
   const baseCurrency = "CAD"; // Base currency
   const targetCurrency = "AUD"; // Target currency
   const numOfWeeks = 10; // Number of weeks for historical data

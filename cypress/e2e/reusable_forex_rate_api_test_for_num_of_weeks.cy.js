@@ -1,4 +1,4 @@
-describe("Fetch Forex Rate for baseCurrency to targetCurrency for a number of weeks and Calculate Average", () => {
+describe("Fetch Forex Rate for baseCurrency to targetCurrency for numOfWeeks and Calculate Average", () => {
   // Get parameters from environment variables or default to 'CAD', 'AUD', and 10 weeks
   const baseCurrency = Cypress.env("baseCurrency") || "CAD";
   const targetCurrency = Cypress.env("targetCurrency") || "AUD";
