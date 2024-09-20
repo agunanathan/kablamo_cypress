@@ -15,13 +15,9 @@ describe("Fetch Forex Rate for baseCurrency to targetCurrency for numOfWeeks and
       url: getApiUrl(baseCurrency, targetCurrency),
     }).then((response) => {
       // Assert successful response
-      if (response.status !== 200) {
-        cy.log(`API Error Handling Status: ${response.status}`);
-        cy.log(response.body);
-      } else {
-        expect(response.status).to.eq(200);
-        cy.log(`API Response Status: ${response.status} (Success)`);
-      }
+      expect(response.status).to.eq(200);
+      cy.log(`API Response Status: ${response.status} (Success)`);
+
       // Extract observations
       const observations = response.body.observations;
       // Check if observations are empty
