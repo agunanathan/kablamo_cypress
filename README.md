@@ -47,4 +47,7 @@ Running the tests on CLI:
   CLI command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 // Note: weeks, baseCurrency and targetCurrency can be changed here before running
 
 - Running tests on Cypress Test Runner:
+  
   Command: npx cypress open
+
+  Then choose the E2E Testing on a browser of choice (chrome for example) and run the scripts
