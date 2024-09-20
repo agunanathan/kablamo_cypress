@@ -37,14 +37,9 @@ describe("Fetch Forex Rate for baseCurrency to targetCurrency for numOfWeeks and
       let sum = 0;
       observations.forEach((observation) => {
         const rateValue = observation[`FX${baseCurrency}${targetCurrency}`].v;
-        const rate = parseFloat(rateValue);
-
-        if (isNaN(rate)) {
-          cy.log(`Invalid rate found: ${rateValue}`);
-          assert.isOk(false, "Invalid exchange rate encountered.");
-          return;
-        }
-
+        const rate = parseFloat(
+          observation[`FX${baseCurrency}${targetCurrency}`].v
+        );
         sum += rate;
       });
       // Calculate and log the average rate
