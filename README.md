@@ -1,9 +1,9 @@
-Steps:
+# Steps:
 
 1.  Clone Repo
 2.  Run "npm install"
 
-Tests:
+# Tests:
 There are two cypress test scripts:
 
     1. reusable_forex_rate_api_test_for_num_of_weeks.cy.js
@@ -11,9 +11,9 @@ There are two cypress test scripts:
     2. cad_to_aud_forex_rate_over_10_weeks.cy.js
     
 
-Running the tests on CLI:
+# Running the tests on CLI:
 
-- Running tests individually:
+- # Running tests individually:
   
   Script1: cad_to_aud_forex_rate_over_10_weeks.cy.js
 
@@ -25,23 +25,25 @@ Running the tests on CLI:
   CLI Command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 --spec cypress/e2e/reusable_forex_rate_api_test_for_num_of_weeks.cy.js  // Note: weeks, baseCurrency and targetCurrency can be changed here before running
 
 
-- Running both tests together on CLI:
+- # Running both tests together on CLI:
   
   CLI command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 // Note: weeks, baseCurrency and targetCurrency can be changed here before running
 
   
 
-Running tests on Cypress Test Runner:
+# Running tests on Cypress Test Runner:
   
   Command: npx cypress open
 
   Then choose the E2E Testing on a browser of choice (chrome for example) and run the scripts
 
 
-Things that could still need some work:
+# Things that could still need some work:
 1.  Finding a way to add cy.logs to the html report.
 2.  Adding more negative tests (may need more context of API functionality and understanding of business rules)
   
+
+# The Ask (Modified to explain what tools were used to complete the tasks):
 
 🚀Mission
 
