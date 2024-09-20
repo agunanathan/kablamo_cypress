@@ -4,7 +4,9 @@ Steps:
 2.  Run "npm install"
 
 Tests:
-There are two test scripts;
+There are two cypress test scripts;
+    1. reusable_forex_rate_api_test_for_num_of_weeks.cy.js
+    2. cad_to_aud_forex_rate_over_10_weeks.cy.js
 
 🚀Mission
 
