@@ -22,12 +22,16 @@ There are two cypress test scripts:
 
   Script2: reusable_forex_rate_api_test_for_num_of_weeks.cy.js
   
-  CLI Command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 --spec cypress/e2e/reusable_forex_rate_api_test_for_num_of_weeks.cy.js  // Note: weeks, baseCurrency and targetCurrency can be changed here before running
+  CLI Command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 --spec cypress/e2e/reusable_forex_rate_api_test_for_num_of_weeks.cy.js
+
+  note: weeks, baseCurrency and targetCurrency can be changed here before running
 
 
 - # Running both tests together on CLI:
   
-  CLI command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 // Note: weeks, baseCurrency and targetCurrency can be changed here before running
+  CLI command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10
+
+  Note: weeks, baseCurrency and targetCurrency can be changed here before running
 
   
 
