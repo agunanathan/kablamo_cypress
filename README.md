@@ -38,12 +38,12 @@ Running the tests on CLI:
 
 - Running tests individually:
   
-  Script: cad_to_aud_forex_rate_over_10_weeks.cy.js
+  Script1: cad_to_aud_forex_rate_over_10_weeks.cy.js
 
   CLI Command: npx cypress run --spec cypress/e2e/cad_to_aud_forex_rate_over_10_weeks.cy.js
 
 
-  Script: reusable_forex_rate_api_test_for_num_of_weeks.cy.js
+  Script2: reusable_forex_rate_api_test_for_num_of_weeks.cy.js
   
   CLI Command: npx cypress run --env baseCurrency=USD,targetCurrency=CAD,weeks=10 --spec cypress/e2e/reusable_forex_rate_api_test_for_num_of_weeks.cy.js  // Note: weeks, baseCurrency and targetCurrency can be changed here before running
 
